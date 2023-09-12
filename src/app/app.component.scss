@@ -33,19 +33,25 @@ p {
 
 }
 
-.content {
-  display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 500px;
-  flex-direction: column;
-  align-items: center;
-}
 
 footer {
   height: 50px;
   display: grid;
   grid-row: -1;
   background-color: orange;
+}
 
+#orange{
+  background-color: orangered;
+}
+#green{
+  background-color: limegreen;
+}
+
+#blue{
+  background-color: dodgerblue;
+}
+
+#yellow {
+  background-color: yellow;
 }

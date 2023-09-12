@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'QuentinHugoTP1';
-  constructor() {}
-  parentMessage = "Message from the parent to the child";
-}
+  newColor = 'black';
+  public changeBackground(newitem :string){
+    this.newColor = newitem;
+    }
+  }
