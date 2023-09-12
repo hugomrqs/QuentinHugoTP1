@@ -1,17 +1,17 @@
 <div class="content"  role="main" >
 <div class="card-container">
 
-  <div  class="card" id="orange" (click)="addEvent('orange')" >
+  <div  [ngClass]="color[0]" id="card"  (click)="addEvent('orange')" >
 
   </div>
 
-  <div class="card" id="green" (click)="addEvent('green')">
+  <div [ngClass]="color[1]" id="card"  (click)="addEvent('green')">
   </div>
 
-  <div class="card" id="blue" (click)="addEvent('blue')">
+  <div [ngClass]="color[2]" id="card" (click)="addEvent('blue')">
   </div>
 
-  <div class="card" id="yellow" (click)="addEvent('yellow')"></div>
+  <div [ngClass]="color[3]" id="card"  (click)="addEvent('yellow')"></div>
 
 </div>
 </div>

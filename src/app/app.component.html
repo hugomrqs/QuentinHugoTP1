@@ -8,12 +8,11 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<!-- Toolbar -->
+<app-header></app-header>
+<div [ngClass]="newColor">
+  <app-card [color]=colors (event)="changeBackground($event)"> </app-card>
 
-<div class="toolbar" role="banner"></div>
-<div id="{{newColor}}">
-  <app-card (event)="changeBackground($event)"> </app-card>
 </div>
-  <footer> </footer>
+<app-footer></app-footer>
 
 

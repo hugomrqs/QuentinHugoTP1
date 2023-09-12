@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'QuentinHugoTP1';
   newColor = 'black';
+  colors : string[] = ['orange','green', 'blue','yellow'];
   public changeBackground(newitem :string){
     this.newColor = newitem;
     }

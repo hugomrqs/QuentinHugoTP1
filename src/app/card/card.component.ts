@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,8 +6,10 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-@Output()event =new EventEmitter
+@Output() event =new EventEmitter;
+@Input() color : string[] = [];
   public addEvent(value: string){
+    console.log('test');
   this.event.emit(value)
   }
 
