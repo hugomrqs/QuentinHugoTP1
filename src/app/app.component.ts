@@ -5,11 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'QuentinHugoTP1';
-  newColor = 'black';
+  title : string = 'QuentinHugoTP1';
+  newBackgroundColor : string = '';
   colors : string[] = ['orange','green', 'blue','yellow'];
-  public changeBackground(newitem :string){
-    this.newColor = newitem;
-    }
+  
+  public changeBackground(color : string){
+    this.newBackgroundColor = color;
   }
+}

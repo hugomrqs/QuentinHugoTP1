@@ -1,18 +1,12 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<app-header></app-header>
-<div [ngClass]="newColor">
-  <app-card [color]=colors (event)="changeBackground($event)"> </app-card>
-
+<!--header-->
+  <app-header></app-header> 
+  
+<!--body-->
+<div [ngClass]="newBackgroundColor">
+  <app-card [color]=colors (event)="changeBackground($event)"> </app-card> 
 </div>
+
+<!--footer-->
 <app-footer></app-footer>
 
 

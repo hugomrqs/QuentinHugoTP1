@@ -1,17 +1,5 @@
 <div class="content"  role="main" >
-<div class="card-container">
-
-  <div  [ngClass]="color[0]" id="card"  (click)="addEvent('orange')" >
-
+  <div class="card-container">
+    <div *ngFor="let c of color" [ngClass]="c" id="card" (click)="addEvent(c)"></div>
   </div>
-
-  <div [ngClass]="color[1]" id="card"  (click)="addEvent('green')">
-  </div>
-
-  <div [ngClass]="color[2]" id="card" (click)="addEvent('blue')">
-  </div>
-
-  <div [ngClass]="color[3]" id="card"  (click)="addEvent('yellow')"></div>
-
-</div>
 </div>
