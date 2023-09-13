@@ -8,7 +8,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 export class CardComponent {
   @Output() event = new EventEmitter;
-  @Input() color : string[] = [];
+  @Input() public color : string[] = [];
   
   public addEvent(value: string){
     this.event.emit(value);
